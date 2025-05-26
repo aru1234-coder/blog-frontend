@@ -3,10 +3,10 @@ import { RiSearchEyeLine } from "react-icons/ri";
 
 const Hero = () => {
   return (
-    <div className="p-10 mt-14">
+    <div className="p-10 my-16">
       <div className="flex items-center flex-col gap-2">
         <div className="mb-4">
-          <div className="flex space-x-2 space-y-2">
+          <div className="flex space-x-2">
             <h1 className="font-bold text-5xl bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
               Crafting Spectacular
             </h1>
@@ -29,17 +29,28 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="flex md:flex-col flex-row gap-4 max-w-xl mx-auto">
+        <div className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto mb-3">
           <div className="relative flex-grow">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <RiSearchEyeLine />
+            <input
+              type="text"
+              placeholder="Search..."
+              className="block w-full pr-10 p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm transition-all"
+            />
+            <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+              <RiSearchEyeLine className="h-5 w-5 text-pink-600" />
             </div>
           </div>
-          <input
-            type="text"
-            placeholder="search...."
-            className="block w-full pl-10 p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm transition-all"
-          />
+        </div>
+
+        <div className="flex items-center gap-4">
+          <p className="text-gray-600 text-base font-semibold">
+            Popular Searches:
+          </p>
+          <div className="flex gap-3">
+            <p className="text-sm">#Hot News</p>
+            <p className="text-sm">#Health</p>
+            <p className="text-sm">#Nature</p>
+          </div>
         </div>
       </div>
     </div>
