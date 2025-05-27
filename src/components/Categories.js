@@ -27,20 +27,22 @@ const categories = [
 
 const Categories = () => {
   return (
-    <div className="flex items-center justify-center flex-wrap gap-4 p-4">
-      {categories.map((category, index) => (
-        <div
-          key={index}
-          className="max-w-sm p-3 border border-gray-200 rounded-full shadow-sm dark:bg-gray-800 dark:border-gray-700 flex gap-2 items-center cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700"
-        >
-          <div className="text-gray-500 dark:text-gray-400">
-            {category.icon}
+    <div className="flex items-center justify-center flex-wrap gap-4 p-4 border-b-2">
+      {categories.map((category, index) => {
+        return (
+          <div
+            key={index}
+            className="max-w-sm p-3 border border-gray-200 rounded-full shadow-sm dark:bg-gray-800 dark:border-gray-700 flex gap-2 items-center cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700"
+          >
+            <div className="text-gray-500 dark:text-gray-400">
+              {category.icon}
+            </div>
+            <h5 className="text-base font-semibold tracking-tight text-gray-900 dark:text-white whitespace-nowrap">
+              {category.title}
+            </h5>
           </div>
-          <h5 className="text-base font-semibold tracking-tight text-gray-900 dark:text-white whitespace-nowrap">
-            {category.title}
-          </h5>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 };

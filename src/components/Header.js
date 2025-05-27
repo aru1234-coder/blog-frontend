@@ -4,7 +4,7 @@ import React from "react";
 const Header = () => {
   return (
     <header className="flex items-center justify-center sticky top-0 z-10">
-      <div className="bg-white w-1/2 m-2 max-w-6xl mx-auto p-2">
+      <div className="bg-white w-1/2 m-10 max-w-6xl mx-auto p-2">
         <div className="p-2 flex justify-between items-center">
           {/* Left navigation */}
           <nav className="space-x-8">

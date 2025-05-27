@@ -3,9 +3,9 @@ import { RiSearchEyeLine } from "react-icons/ri";
 
 const Hero = () => {
   return (
-    <div className="p-10 my-16">
+    <div className="p-10 my-24">
       <div className="flex items-center flex-col gap-2">
-        <div className="mb-4">
+        <div className="mb-4 space-y-4">
           <div className="flex space-x-2">
             <h1 className="font-bold text-5xl bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
               Crafting Spectacular
